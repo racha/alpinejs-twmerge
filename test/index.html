@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Autoanimate Test</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="../dist/alpinejs-twmerge.cdn.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  </head>
+  <body>
+    <script>
+      const test = () => {
+        return {
+          something: false,
+        };
+      };
+    </script>
+    <div class="space-y-5">
+      <div x-data="{ highlight: false }" class="text-gray-800">
+        <!-- Original class "text-gray-800" is always included -->
+        <div class="w-10 h-10 bg-gray-200" x-twmerge="{'bg-yellow-200': highlight}"></div>
+        <button @click="highlight = !highlight">Toggle Highlight</button>
+      </div>
+      <div x-data="{ active: false }" class="text-gray-800">
+        <!-- When using :class with $twmerge to dynamically merge classes you need to provide the base classes as well -->
+        <div class="w-10 h-10" :class="$twMerge(['bg-gray-200', {'bg-yellow-200': active}])"></div>
+        <button @click="active = !active">Toggle Active</button>
+      </div>
+    </div>
+  </body>
+</html>

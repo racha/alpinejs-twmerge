@@ -1,0 +1,44 @@
+{
+  "name": "alpinejs-twmerge",
+  "version": "1.0.0",
+  "description": "Minimal AlpineJS wrapper for twMerge and clsx. magic and directive for Alpine.js",
+  "type": "module",
+  "keywords": [
+    "Alpine",
+    "AlpineJS",
+    "Tailwind Merge",
+    "twMerge",
+    "clsx",
+    "Alpine Tailwind",
+    "Alpine twMerge",
+    "Alpine clsx",
+    "Alpine Classes",
+    "Alpine Classes Merge"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/racha/alpinejs-twmerge.git"
+  },
+  "author": "Stefan Racic",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/racha/alpinejs-twmerge/issues"
+  },
+  "homepage": "https://github.com/racha/alpinejs-twmerge#readme",
+  "main": "dist/alpinejs-twmerge.cjs.js",
+  "module": "dist/alpinejs-twmerge.esm.js",
+  "unpkg": "dist/alpinejs-twmerge.cdn.js",
+  "jsdelivr": "dist/alpinejs-twmerge.cdn.js",
+  "browser": "dist/alpinejs-twmerge.cdn.js",
+  "scripts": {
+    "build": "node scripts/build.js"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.23.9",
+    "@babel/preset-env": "^7.23.9",
+    "esbuild": "^0.20.1",
+    "esbuild-plugin-babel": "^0.2.3",
+    "tailwind-merge": "^2.2.1",
+    "clsx": "^2.1.0"
+  }
+}
