@@ -1,6 +1,6 @@
 {
   "name": "alpinejs-twmerge",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Minimal AlpineJS wrapper for twMerge and clsx. magic and directive for Alpine.js",
   "type": "module",
   "keywords": [
