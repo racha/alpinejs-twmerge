@@ -119,3 +119,11 @@ Alpine.plugin(twmerge);
 window.Alpine = Alpine;
 Alpine.start();
 ```
+
+### Stats
+
+[![](https://data.jsdelivr.com/v1/package/npm/alpinejs-twmerge/badge)](https://www.jsdelivr.com/package/npm/alpinejs-twmerge)
+![](https://img.shields.io/bundlephobia/min/alpinejs-twmerge)
+![](https://img.shields.io/npm/v/alpinejs-twmerge)
+![](https://img.shields.io/npm/dt/alpinejs-twmerge)
+![](https://img.shields.io/github/license/racha/alpinejs-twmerge)
